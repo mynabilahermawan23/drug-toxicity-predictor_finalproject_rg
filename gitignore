@@ -1,0 +1,45 @@
+# ── Virtual Environment ───────────────────────────────────
+tox_env/
+venv/
+env/
+.env/
+
+# ── Python ────────────────────────────────────────────────
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# ── Jupyter ───────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ── Model files (terlalu besar untuk GitHub) ──────────────
+saved_models/*.pkl
+saved_models/*.pt
+saved_models/*.h5
+# Tapi tetap track folder & JSON
+!saved_models/.gitkeep
+!saved_models/*.json
+
+# ── Dataset ───────────────────────────────────────────────
+/tmp/
+*.gz
+*.csv.gz
+tox21_pyg/
+
+# ── OS ────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── VSCode ────────────────────────────────────────────────
+.vscode/
+*.code-workspace
+
+# ── Output plots (opsional — hapus baris ini jika ingin upload) ──
+# output_plots/
